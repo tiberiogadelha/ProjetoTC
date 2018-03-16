@@ -46,12 +46,14 @@ public class TuringMachine {
 	}
 
 	protected Estado searchState(String estado) {
+		Estado estadoProcurado = null;
+		
 		for (Estado state : estados) {
 			if (state.getNome().equals(estado)) {
-				return state;
+				estadoProcurado = state;
 			}
 		}
-		return null;
+		return estadoProcurado;
 	}
 
 	public void addTransition(String estado1, String simboloAtual, String simboloNovo, String direcao, String estado2) {
