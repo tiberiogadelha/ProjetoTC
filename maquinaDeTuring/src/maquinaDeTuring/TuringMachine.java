@@ -51,6 +51,7 @@ public class TuringMachine {
 		for (Estado state : estados) {
 			if (state.getNome().equals(estado)) {
 				estadoProcurado = state;
+				break;
 			}
 		}
 		return estadoProcurado;
