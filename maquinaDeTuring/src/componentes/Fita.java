@@ -49,9 +49,11 @@ public class Fita {
 	public void escreverPalavra(String palavra) {
 		String[] saida = palavra.split("");
 		for (int i = 0; i < saida.length; i++) {
-			if(saida[i].equals(" ")) this.palavra.add("_");
-			else
+			if(saida[i].equals(" ")) {
+				this.palavra.add("_");
+			} else {
 				this.palavra.add(saida[i]);
+			}
 		}
 		this.cabecote = 0;
 	}
